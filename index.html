@@ -1,4 +1,3 @@
-
 <!doctype html>
 
 <html>
@@ -8,33 +7,160 @@
         <meta charset="utf-8">
         <title></title>
         <style>
+            
             #nav{
                 display: grid;
                 grid-template-columns: 80% 7% 6% 7%;
                 list-style-type: none;
             }
 
-            #nav li{
+            #nav a.menu{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-weight:bold;
                 font-stretch: expanded;
+                font-size: 17px;
             }
+
+            a.menu{
+                text-decoration: none;
+                color:black;
+            }
+
+            #nav a.menu:hover{
+                background-color: rgb(255, 242, 66);
+                font-size: 20px;
+            }
+
+           
+            iframe{
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .welcomebox{
+                background-image: url('welcomebox.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            
+            div.welcome{
+                height: 30vh;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 5vh;
+                color: white;
+                background-color: rgb(8, 102, 196);
+                background-image: url('sky.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            #nav2{
+                display: flex;
+                width: 100vw;
+                height: 40vh;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: 30px;
+                font-weight: bolder;
+            }
+
+            #nav2 a{
+                text-decoration: none;
+                color: whitesmoke;
+            }
+
+            .bible{
+                background-image: url('bible.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .worship{
+                background-image:  url('worship.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .post{
+                background-image: url('post.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            #foot{
+                background-color: rgb(53, 53, 53);
+            }
+
+            .footbox{
+                text-align: center;
+                width: 100vw;
+                height: 10vh;
+                padding-top: 35px;
+                line-height: 30px;
+                align-items: center;
+                color: white;
+            }
+
+            .icon{
+                padding-bottom: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;   
+            }
+
+            
         </style>
     </head>
 
     <body style="margin: 0;">
         <div id="nav">
-            <h2 style="margin: 15px 0 30px 70px;">한몸된교회</h2>
-            <li style="background-color: mediumblue; color:aliceblue;">예배</li>
-            <li>소개</li>
-            <li>오시는 길</li>
+           <h2 style="margin: 15px 0 30px 70px;"><a href="index.html" style="text-decoration: none; color:black;">한몸된교회</a></h2>
+            <a class="menu" href="#">예배</a>
+            <a class="menu" href="#">소개</a>
+            <a class="menu" href="#">오시는 길</a>
+        </div>
+
+        <div class="welcomebox" style="text-align: center;">
+            <img src="onebodysimbol.png" style="width: 20vw; height: 30vh; margin: auto; padding: 60px;">
         </div>
         
-        <div>
-            <img src="church.jpg" style="width: 100%; height: 400px;">
+        <div class="media">
+            <iframe src="https://www.youtube.com/embed/Q1BcHZ81fHg?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-    </body>
-</html>
 
+       <div class="welcome">
+        한몸된 교회에 오신 여러분을 환영합니다
+       </div>
+
+       <div id="nav2">
+        <div class="bible" style="padding:100px;"><a href=#>말씀</a></div>
+        <div class="worship" style="padding:100px;"><a href=#>찬양</a></div>
+        <div class="post" style="padding:100px;"><a href=#>주보</a></div>
+       </div>
+
+    </body>
+
+    <foot>
+        <div id="foot">
+            <div class="footbox">
+                한몸된교회<br>
+                경기도 하남시 미사강변한강로 270 호반상가 2층 152호│onebodych@gmail.com│
+            </div>
+
+            <div class="icon">
+                <a href="https://www.youtube.com/@onebodych" target="blank1" style="padding: 0 20px 0 20px;"><img src="youtube.jpg" width="30px" height="30px"></a>
+                <a href="https://instagram.com/onebody_church?igshid=YmMyMTA2M2Y=" target="blank2"><img src="instagram.jpg" width="30px" height="30px"></a>
+            </div>
+
+            
+        </div>
+    </foot>
+
+</html>
